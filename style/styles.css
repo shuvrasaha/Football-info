@@ -176,8 +176,8 @@ footer h1{
 }
 
 .social-icon{
-   display: flex;
-  width: 90px;
+    display: flex;
+    width: 90px;
 }
 
 .social-icon a{
@@ -303,15 +303,14 @@ footer h1{
 
 .icons p{
     font-size: 14px;
-   t
-   ext-align: left;
+    text-align: left;
 }
 .footer{
     height: 100%;
 }
 
 footer h1{
-padding: 25px;
+    padding: 25px;
 }
 
 .footer-items{
