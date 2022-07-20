@@ -22,8 +22,6 @@ margin: 50px 80px 80px 80px;
     display: grid; 
     grid-template-columns: 1fr 1.5fr;  
     padding: 80px 0 0 80px;
-    
-    
 }
 
 .banner-info{
@@ -49,9 +47,8 @@ width: 100%;
     margin-bottom: 150px;
     border-radius: 5px;
     transition-property: width;
-    transition-duration: 2s;
+    transition-duration: 5s;
     transition-timing-function: linear;
-    transition-delay: 1s;
 }
 
 /* Animation Transition */
@@ -138,16 +135,17 @@ width: 100%;
     margin-left: -1px;
     margin-bottom: 10px;
 }
+.icons{
+    color: gray;
+    margin-top: 10px;
+}
 .fa-clock{
     margin-right: 10px;
 }
 .fa-comment-dots{
     margin: 0 15px;
 }
-.icons{
-    color: gray;
-    margin-top: 10px;
-}
+
 
 footer{
     width: 100%;
@@ -196,6 +194,9 @@ footer h1{
         width:auto;
         height: auto;
     }
+    .btn{
+        width: 80%;
+    }
     .nav-article{
         display:flex;
         flex-direction: column;
@@ -207,8 +208,8 @@ footer h1{
         justify-content: center;
         width:auto;
         height: 140px;
-        
         }
+
     .nav a{
         border: 1px solid gray;
         border-radius: 5px;
@@ -234,4 +235,79 @@ footer h1{
         gap: 15px;
         align-items: center;
     }
+}
+
+@media  only screen and (max-width:767px) {
+.banner{
+   display:flex;
+   flex-direction: column;
+   padding: 30px;
+}
+.banner-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.banner-info h1,p{
+    font-size:34px;
+    text-align: center;
+    line-height: normal;
+}
+
+.banner-image img{
+height: 350px;
+margin-top: -100px;
+margin-bottom: -37px;;
+}
+.nav-article{
+    display:flex;
+    flex-direction: column;
+    
+}
+.nav{
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+
+    }
+
+.nav a{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #161616;
+    font-size: 25px;
+    padding: 8px 20px; 
+}
+ 
+#onpage{
+    background-color: #DD0000;
+    color: #ffffff;
+}
+.article{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.icons p{
+    font-size: 14px;
+   text-align: left;
+}
+.footer{
+    height: 100%;
+}
+footer h1{
+padding: 25px;
+}
+.footer-items{
+    width: 25%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 1px;
+  
+}
+
 }
